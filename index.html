@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(206, 206, 206);">
+    <h1>Cambio valuta</h1>
+    <form action="cambio.php" method="get">
+        <label for="importo"> Inserire l'importo in euro: </label> <br>
+        <input type="number" name="importo" required> <br>
+        <label for="valuta"> Selezionare il cambio valuta: </label> <br>
+        <select name="valuta" id="valuta" onchange="cambioBandieraSelect()">
+            <option value="dol"> Dollaro </option>
+            <option value="yen"> Yen </option>
+            <option value="fra"> Franchi svizzeri </option>
+            <option value="ste"> Sterline </option>
+        </select> <br>
+        <hr>
+        <img id="bandiera" src="./images/us-flag.gif">
+        <hr>
+        <button type="submit"> INVIA </button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
